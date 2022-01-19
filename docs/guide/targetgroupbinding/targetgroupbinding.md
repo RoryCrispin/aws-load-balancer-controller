@@ -3,8 +3,8 @@ TargetGroupBinding is a [custom resource (CR)](https://kubernetes.io/docs/concep
 
 This will allow you to provision the load balancer infrastructure completely outside of Kubernetes but still manage the targets with Kubernetes Service.
 
-!!!tip "usage to support Ingress and Service"
-    The AWS LoadBalancer controller internally used TargetGroupBinding to support the functionality for Ingress and Service resource as well.
+!!!tip "Usage to support Ingress and Service"
+    The AWS LoadBalancer controller internally uses TargetGroupBinding to support the functionality for Ingress and Service resource as well.
     It automatically creates TargetGroupBinding in the same namespace of the Service used. 
     
     You can view all TargetGroupBindings in a namespace by `kubectl get targetgroupbindings -n <your-namespace> -o wide`
